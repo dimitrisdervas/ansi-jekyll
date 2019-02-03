@@ -5,7 +5,7 @@ subtitle: 2 Persons
 section: studio
 published: true
 order: 1
-low: "40€"
+low: "45€"
 medium1: "50€"
 medium2: "60€"
 high: "70€"
