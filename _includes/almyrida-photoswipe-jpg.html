@@ -6,7 +6,7 @@
               </div>
                 <div class="column-left">
                   <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                    {% assign image_files = site.data.photos.index.views %}
+                    {% assign image_files = site.data.photos.index.views.contents %}
                     {% for image in image_files %}
                       {% assign image-basename = image.filename | remove: ".jpg" %}
                       <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="{% if forloop.first %}full {%endif%}{% cycle 'large', 'medium' %}" style="background-image: url('{{site.baseurl}}/assets/rooms2/views/{{image-basename}}-{% if forloop.first %}large{% else %}medium{% endif %}.jpg');">
@@ -16,7 +16,7 @@
                           <figcaption itemprop="caption description">Ansi / views-{{ forloop.index }}</figcaption>
                       </figure>
                     {% endfor %}
-                    {% assign image_files = site.data.photos.index.outer %}
+                    {% assign image_files = site.data.photos.index.outer.contents %}
                     {% for image in image_files %}
                       {% assign image-basename = image.filename | remove: ".jpg" %}
                       <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="{% cycle 'large', 'medium' %}" style="background-image: url('{{site.baseurl}}/assets/rooms2/outer/{{image-basename}}-medium.jpg');">

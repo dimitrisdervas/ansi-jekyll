@@ -8,7 +8,7 @@
               </div>
                 <div class="column-left">
                  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                  {% assign image_files = site.data.photos.index[room.section] %}
+                  {% assign image_files = site.data.photos.index[room.section].contents %}
                   {% for image in image_files %}
                     {% assign image-basename = image.filename | remove: ".jpg" %}
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="{% if forloop.first %}full {%endif%}{% cycle 'large', 'medium' %}" style="background-image: url('{{site.baseurl}}/assets/rooms2/{{room.section}}/{{image-basename}}-large.jpg');-ms-grid-column:{{forloop.index}};-ms-grid-row:{% cycle '1', '2' %}">
