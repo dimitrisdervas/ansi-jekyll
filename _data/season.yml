@@ -22,8 +22,8 @@ seasons:
    high: 
      - row: 1 Jul - 31 Aug
  pricesfrom:
-   low: "from 35€"
-   medium: "from 45€"
+   low: "from 45€"
+   medium: "from 55€"
    high: "from 70€"
     
 

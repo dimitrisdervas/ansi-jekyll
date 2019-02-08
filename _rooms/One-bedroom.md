@@ -9,7 +9,7 @@ low: "55€"
 medium1: "60€"
 medium2: "70€"
 high: "85€"
-prices-from: "from 50€"
+prices-from: "from 55€"
 ---
 
 One bedroom Apartments are suitable for 2 or 3 persons.
