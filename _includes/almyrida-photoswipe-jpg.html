@@ -17,8 +17,9 @@
                       </figure>
                       {% if forloop.index == 2 %}
                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="large" style="background-image: url('{{site.baseurl}}/assets/rooms2/booking2018.png');">
+                        <a href="{{site.baseurl}}/assets/rooms2/booking2018.png" data-size="260x260"></a>
                           <img src="{{site.baseurl}}/assets/rooms2/booking2018.png" itemprop="thumbnail" alt="Booking.com reviews" />
-                        <figcaption itemprop="caption description">Ansi / views-{{ forloop.index }}</figcaption>
+                        <figcaption itemprop="caption description" >Ansi / Booking.com reviews</figcaption>
                       </figure>
                       {% endif %}
                     {% endfor %}
