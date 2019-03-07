@@ -8,7 +8,7 @@ $(document).ready(function() {
         if (f.parsley().isValid()) {
             $.ajax({
               dataType: 'jsonp',
-              url: "http://getsimpleform.com/messages/ajax?form_api_token=ccc68879c9e9c7ab2b01502126346636",
+              url: "https://getsimpleform.com/messages/ajax?form_api_token=ccc68879c9e9c7ab2b01502126346636",
               data: $('#reservation-form').serialize(),
               success: function(response) {
                      $('.success-message').css( "display", "block" );       
